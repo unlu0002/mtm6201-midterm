@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile stylings before media queries for desktop */
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  line-height: 1;
+  background-color: #E3DCD2;
+}
+
+ul {
+  list-style: none;
+}
+
+/* vv Heading element styles */
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* General container styling class named "pageclass" */
+
+.pageclass {
+  position: relative;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: auto;
+}
+
+
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.logo {
+  margin-top: 16px;
+  margin-left: 32px;
+  scale: 80%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.4);
+  transition: all .5s;
+}
+
+.logo img {
+  /* height: auto; */
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logocontainer img {
+  width: auto;
+}
+
+#section {
+  color: #3C2657;
+}
+
+/* Navigation style will be added here according to desktop version, including transition animations in nav lists */
+.navclass {
+  margin: auto;
+}
+
+header ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+header ul a {
+  color: #3C2657;
+  font-size: 0.8rem;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  padding: 1rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+header ul a:hover {
+  color: #ffffff;
+  background-color: #3C2657;
+}
+
+header ul a:focus {
+  color: #ffffff;
+  background-color: #3C2657;
+}
+
+/* Main part stylings begins */
+
+.mainbutton1 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background-color: #3C2657;
+  color: white;
+  border-radius: 2rem;
+  border: 0px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 8px;
+  padding: 0.5rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.mainbutton1:hover {
+  background-color: black;
+  color: white;
+  transition: color 0.3s, background-color 0.3s
+}
+
+.social {
+  scale: 20%;
+  justify-self: end;
+}
+
+.headerimage {
+  margin: 0;
+  padding: 24px;
+}
+
+.pageclass h2 {
+  margin-bottom: 1rem;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.section-info {
+  margin: 1rem;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+/* Footer styling*/
+footer {
+  background-color: #7F6E66;
+  color: black;
+  padding: 8px;
+}
+
+footer a {
+  text-decoration: underline;
+  color: black;
+}
+
+.footerbold {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+}
+
+footer p {
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.mistastes i::after {
+  content: "expand_more";
+  font-family: 'Material Symbols Outlined', sans-serif;
+  color: #3C2657;
+  margin: 2px;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+/* Add a min-width media query for the screen size of 760px and above */
+@media screen and (min-width: 760px) {
+
+  .logo {
+    margin-right: 9rem;
+  }
+
+  .bodydiv {
+    margin-left: 19rem;
+    margin-right: 19rem;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .mistastes i::after {
+    content: "expand_more";
+    font-family: 'Material Symbols Outlined', sans-serif;
+    color: #3C2657;
+    margin: 2px;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+    
+  header ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+    margin-bottom: 0px;
+  }
+
+  .headerclass .pageclass {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navsocial {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    flex-direction: column;
+  }
+
+  .social {
+    scale: 100%;
+    justify-self: end;
+    margin-bottom: 2rem;
+  }
+
+  .socialicons:hover {
+    content: url("../images/social2.svg");
+    transition: all .5s;
+  }
+
+
+  .headerimageparent {
+    display: grid;
+  }
+  
+  /* Could not manage to align button text vertically centered */
+
+  .section1, .section2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .section1 {
+    text-align: right;
+  }
+
+  .section2 img {
+    width: 50%;
+    height: 100%;
+    margin-top: 3rem;
+  }
+
+  .section1 img {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .section2 {
+    display:flex;
+    flex-direction: row-reverse;
+  }
+
+  footer p {
+    margin-left: 8rem;
+  }
+
+  .footerbold {
+    margin-left: 6rem;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 100%;
+  }
+
+  .footernav {
+    list-style: none;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 100%;
+    margin-left: 16rem;
+  }
+ 
+  footer ul a{
+    text-decoration:none;
+    color: #000000;
+    font-size: 0.8rem;
+  }
+
+}

@@ -1,0 +1,36 @@
+<svg width="300" height="80" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_744_2)">
+    <!-- Existing paths and other elements from your SVG -->
+
+    <!-- Circle 1 -->
+    <circle cx="50" cy="20" r="8" fill="#3C2657">
+      <animate attributeName="cy" values="20;12;20" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="r" values="8;10;8" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <!-- Circle 2 -->
+    <circle cx="100" cy="20" r="8" fill="#3C2657">
+      <animate attributeName="cy" values="20;12;20" dur="1.5s" begin="0.3s" repeatCount="indefinite" />
+      <animate attributeName="r" values="8;10;8" dur="1.5s" begin="0.3s" repeatCount="indefinite" />
+    </circle>
+    <!-- Circle 3 -->
+    <circle cx="150" cy="20" r="8" fill="#3C2657">
+      <animate attributeName="cy" values="20;12;20" dur="1.5s" begin="0.6s" repeatCount="indefinite" />
+      <animate attributeName="r" values="8;10;8" dur="1.5s" begin="0.6s" repeatCount="indefinite" />
+    </circle>
+    <!-- Circle 4 -->
+    <circle cx="200" cy="20" r="8" fill="#3C2657">
+      <animate attributeName="cy" values="20;12;20" dur="1.5s" begin="0.9s" repeatCount="indefinite" />
+      <animate attributeName="r" values="8;10;8" dur="1.5s" begin="0.9s" repeatCount="indefinite" />
+    </circle>
+    <!-- Circle 5 -->
+    <circle cx="250" cy="20" r="8" fill="#3C2657">
+      <animate attributeName="cy" values="20;12;20" dur="1.5s" begin="1.2s" repeatCount="indefinite" />
+      <animate attributeName="r" values="8;10;8" dur="1.5s" begin="1.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <defs>
+    <clipPath id="clip0_744_2">
+      <rect width="300" height="80" fill="white" transform="translate(0.261719 0.211372)"/>
+    </clipPath>
+  </defs>
+</svg>
