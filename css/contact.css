@@ -26,14 +26,16 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-top: 1rem;
+  color: #3C2657;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 600;
+  color: #3C2657;
 }
 
 h4 {
@@ -130,6 +132,63 @@ header ul a:focus {
   color: #ffffff;
   background-color: #3C2657;
 }
+
+
+
+
+.contactsection {
+  margin: 12px;
+  margin-top: 4px;
+}
+
+.contactsection h2 {
+  margin: 12px;
+  margin-bottom: 24px;
+}
+
+.contactsection h3 {
+  margin-bottom: 18px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.inputs input {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.inputs label {
+  margin-bottom: 4px;
+}
+
+textarea {
+  min-height: 150px;
+  margin-bottom: 12px;
+  resize: none;
+}
+
+.sendbutton {
+  background-color: #3C2657;
+  color: white;
+  border: 0px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 2px;
+  padding: 12px;
+}
+
+.sendbutton:hover {
+  background-color: black;
+  color: white;
+  transition: color 0.3s, background-color 0.3s
+}
+
+
+
 
 /* Main part stylings begins */
 
@@ -386,6 +445,34 @@ footer p {
     color: #000000;
     font-size: 0.8rem;
   }
+
+  .bottomgrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "xx xx" "a b" "c c"
+}
+
+/* Left and right padding should be 0 but does not work */
+/* .pageclass .bottomgrid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+} */
+
+.bottomgrid .contacttitle {
+    grid-area: xx;
+    width: 100%;
+}
+
+.bottomgrid .contactsection {
+    grid-area: a;
+    width: 100%;
+}
+
+
+  
 
 }
 

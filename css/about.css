@@ -26,14 +26,16 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-top: 1rem;
+  color: #3C2657;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 600;
+  color: #3C2657;
 }
 
 h4 {
@@ -130,6 +132,41 @@ header ul a:focus {
   color: #ffffff;
   background-color: #3C2657;
 }
+
+/* Add styles for the About section */
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+  
+.about-info {
+max-width: 800px;
+margin: auto;
+}
+
+.about-info h2 {
+font-size: 2.5rem;
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.about-info p {
+font-size: 1rem;
+font-weight: 500;
+margin-bottom: 1rem;
+}
+
+.about-image img {
+width: 100%;
+max-width: 600px;
+margin-top: 2rem;
+}
+  
+
 
 /* Main part stylings begins */
 
@@ -386,6 +423,34 @@ footer p {
     color: #000000;
     font-size: 0.8rem;
   }
+
+  .bottomgrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "xx xx" "a b" "c c"
+}
+
+/* Left and right padding should be 0 but does not work */
+/* .pageclass .bottomgrid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+} */
+
+.bottomgrid .contacttitle {
+    grid-area: xx;
+    width: 100%;
+}
+
+.bottomgrid .contactsection {
+    grid-area: a;
+    width: 100%;
+}
+
+
+  
 
 }
 
